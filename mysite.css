@@ -6,11 +6,11 @@
 body {
     overflow-y: scroll;
     overflow-x: hidden;
+    color: #4d4d4d;
 }
 
 header {
     background: none;
-    color: rgb(0, 0, 0);
     text-align: left;
     font-size: 30px;
     width: 100%;
@@ -27,18 +27,17 @@ nav ul li {
     font-size: 12pt;
     font-weight: 400;
     font-weight: lighter;
-    color: #000000;
     font-family: sans-serif;
 }
 
 
-nav ul li:hover {
-    color: rgb(0, 0, 0);
-}
+/* nav ul li:hover {
+    color: #4d4d4d;
+} */
 
 
 a {
-    color: black;
+    color: #4d4d4d;
     margin: 0px;
     margin-left: 10px;
 }
@@ -68,7 +67,7 @@ a {
 }
 
 .border {
-    border-top: 2px solid #000000;
+    border-top: 2px solid #4d4d4d;
     padding-left: 40px;
     padding-right: 40px;
 
