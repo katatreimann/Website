@@ -1,7 +1,50 @@
-const canvas = document.querySelector('#drawingCanvas'); //variable
+// const canvas = document.querySelector('#drawingCanvas'); //variable
 
-// canvas.width = window.innerWidth;
-// canvas.height = window.innerHeight;
+// // canvas.width = window.innerWidth;
+// // canvas.height = window.innerHeight;
+
+// const yellow = document.createElement('img');
+// const purple = document.createElement('img');
+
+// yellow.src = 'images/yellow.png';
+// purple.src = 'images/purple.png';
+
+// let paintbrush = yellow;
+
+// const context = canvas.getContext('2d');
+
+// const handleMouseMove = (event) => {
+// 	const left = event.clientX;
+// 	const top = event.clientY;
+
+// 	context.drawImage(paintbrush, left, top);
+// }
+
+// const handleClick = () => {
+
+// 	if (paintbrush === yellow) {
+// 		paintbrush = purple;
+// 	} else {
+// 		paintbrush = yellow;
+// 	}
+// }
+
+// // function setCanvasSize() {
+// // 	canvas.width = window.innerWidth;
+// // 	canvas.height = window.innerHeight;
+// // }
+
+// // // Call setCanvasSize function to set initial canvas size.
+// // setCanvasSize();
+
+// // // Call setCanvasSize function on window resize event to set canvas size dynamically.
+// // window.addEventListener('resize', setCanvasSize);
+
+
+// canvas.addEventListener('click', handleClick)
+// canvas.addEventListener('mousemove', handleMouseMove);
+
+const canvas = document.querySelector('#drawingCanvas'); 
 
 const yellow = document.createElement('img');
 const purple = document.createElement('img');
@@ -13,35 +56,24 @@ let paintbrush = yellow;
 
 const context = canvas.getContext('2d');
 
-const handleMouseMove = (event) => {
-	const left = event.clientX;
-	const top = event.clientY;
+const paintbrushWidth = 100; // Change this to the width of your paintbrush image
 
-	context.drawImage(paintbrush, left, top);
+const handleMouseMove = (event) => {
+  const left = event.clientX - paintbrushWidth / 2;
+  const top = event.clientY - paintbrushWidth / 2;
+
+  context.drawImage(paintbrush, left, top);
 }
 
 const handleClick = () => {
-
-	if (paintbrush === yellow) {
-		paintbrush = purple;
-	} else {
-		paintbrush = yellow;
-	}
+  if (paintbrush === yellow) {
+    paintbrush = purple;
+  } else {
+    paintbrush = yellow;
+  }
 }
 
-// function setCanvasSize() {
-// 	canvas.width = window.innerWidth;
-// 	canvas.height = window.innerHeight;
-// }
-
-// // Call setCanvasSize function to set initial canvas size.
-// setCanvasSize();
-
-// // Call setCanvasSize function on window resize event to set canvas size dynamically.
-// window.addEventListener('resize', setCanvasSize);
-
-
-canvas.addEventListener('click', handleClick)
+canvas.addEventListener('click', handleClick);
 canvas.addEventListener('mousemove', handleMouseMove);
 
 
