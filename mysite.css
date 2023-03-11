@@ -72,3 +72,38 @@ a {
     padding-right: 40px;
 
 }
+
+
+/* about style */
+
+.my-image {
+    background-image: url("images/me2.png");
+    background-size: 30%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.alltext {
+    margin: 120px;
+    width: 50%;
+}
+
+h1 {
+    font-size: 50px;
+    /* margin: 0 30px 0 0; */
+}
+
+.whoiam {
+    font-size: 20px;
+    margin: 50px 0 0 0;
+}
+
+.question {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 40px 0 5px 0;
+}
+
+.answer {
+    font-size: 20px;
+}
