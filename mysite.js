@@ -80,7 +80,7 @@ canvas.addEventListener('mousemove', handleMouseMove);
 /// BUTTONS
 
 function scrollToDraw() {
-	document.getElementById("drawingCanvas").scrollIntoView();
+	document.getElementById("draw").scrollIntoView();
   }
 
   function scrollToAbout() {
