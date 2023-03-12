@@ -85,30 +85,144 @@ h2 {
 
 
 
-/*  FOOTER  */
 
-.contact--inner {
-    display: flex;
-    width: 60%;
-    font-size: 12pt;
-    font-family: sans-serif;
-    margin: 0px;
-    margin-left: 10px;
-    margin-top: 5px;
+
+
+
+
+.clearfix:after {
+    /* why? */
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.contact--column {
+
+
+
+
+
+/* WORK style  */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 20px;
+    padding: 20px 120px;
+    width: 1400px;
+  }
+  
+  .card {
+    width: 40%;
+    /* box-shadow: 0 0 10px #D0B0D1; */
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 0 150px #D0B0D1;
+  }
+  
+  .card h3 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .card p.card-text {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 75px;
+    overflow: hidden;
+  }
+  
+  .card button.read-more,
+  .card button.read-less {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button.read-more {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+  }
+  
+  .card button.read-less {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    display: none;
+  }
+  
+  .card.show-more .card-text {
+    height: auto;
+  }
+  
+  .card.show-more .read-more {
+    display: none;
+  }
+  
+  .card.show-more .read-less {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  FOOTER  */
+
+footer {
+    width: 100%;
+    height: 150px;
+    background-color: #EAE153;
+}
+
+.contact a {
+    display: flex;
+    margin: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #4d4d4d;
+    
+}
+
+/* .contact--column {
     width: 41%;
     font-size: 12pt;
     font-family: sans-serif;
+} */
+
+
+.contact-text {
+    /* margin: 0px; */
+    /* margin-left: 10px; */
+    font-size: 16px;
 }
 
 
-.contact--text {
-    margin: 0px;
-    margin-left: 10px;
-
-}
+/* BORDER  */
 
 .border {
     border-top: 10px solid #EAE153;
@@ -116,7 +230,6 @@ h2 {
     padding-right: 40px;
 
 }
-
 
 
 
@@ -143,3 +256,4 @@ h2 {
   ::-webkit-scrollbar-thumb:hover {
     background: #59eafa; 
   }
+
