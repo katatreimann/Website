@@ -28,17 +28,25 @@
 
 
 
-    <header>
+    <!-- <header>
         <div class="header-container">
           <h1 class="name">kata treimann</h1>
           <nav>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="work.html">Work</a></li>
+              <li><a href="#">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="work.html">work</a></li>
             </ul>
           </nav>
         </div>
+      </header> -->
+
+
+      <header class="header">
+        <h1>kata treimann</h1>
+           <button class="button-draw" type="button" onclick="scrollToDraw()">draw</button>
+           <button type="button" onclick="scrollToAbout()">about</button>
+           <button type="button" onclick="scrollToWork()">work</button>
       </header>
 
 
@@ -52,7 +60,7 @@
 
     <div class="alltext">
 
-        <h1>about</h1>
+        <h1 id="about" class="about-title">About</h1>
 
         <p class="whoiam"> I'm from Estonia. Living in London for the last four years. I have studied Textiles and a bit of Graphic Design. I have always been interested in too many things at once. Wanted to do everything at once. And I've always had the attitude that if you want something, go and do it. Is it a pair of shoes, a ceramic tableware or travelling alone.
         <br>
