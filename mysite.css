@@ -10,7 +10,7 @@ body {
 }
 
 
-/* header and BUTTONS  */
+/* HEADER and BUTTONS  */
 
 .header {
   position: fixed;
@@ -85,28 +85,11 @@ h2 {
 
 
 
-
-
-
-
-
-.clearfix:after {
-    /* why? */
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-
-
-
-
 /* WORK style  */
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     gap: 20px;
     padding: 20px 120px;
     width: 1400px;
@@ -114,7 +97,6 @@ h2 {
   
   .card {
     width: 40%;
-    /* box-shadow: 0 0 10px #D0B0D1; */
     overflow: hidden;
   }
   
@@ -139,56 +121,6 @@ h2 {
     overflow: hidden;
   }
   
-  .card button.read-more,
-  .card button.read-less {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .card button.read-more {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-  }
-  
-  .card button.read-less {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    display: none;
-  }
-  
-  .card.show-more .card-text {
-    height: auto;
-  }
-  
-  .card.show-more .read-more {
-    display: none;
-  }
-  
-  .card.show-more .read-less {
-    display: block;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*  FOOTER  */
@@ -226,31 +158,6 @@ footer {
     margin: 50px ;
   }
   
-  
-
-
-
-
-
-
-
-  
-
-
-/* .contact a {
-    display: flex;
-    margin: 10px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #4d4d4d;
-    
-}
-
-
-
-.contact-text {
-    font-size: 16px;
-} */
 
 
 /* BORDER  */
@@ -263,28 +170,21 @@ footer {
 }
 
 
-
-
-
   /* SCROLLBAR  */
 
-  /* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
     background: #EAE153; 
   }
    
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #D0B0D1; 
     height: 150px;
   }
   
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #59eafa; 
   }

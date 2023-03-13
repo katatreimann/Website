@@ -77,7 +77,7 @@ canvas.addEventListener('click', handleClick);
 canvas.addEventListener('mousemove', handleMouseMove);
 
 
-/// BUTTONS
+/// MENU BUTTONS
 
 function scrollToDraw() {
 	document.getElementById("draw").scrollIntoView();
