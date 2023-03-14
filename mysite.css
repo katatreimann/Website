@@ -87,6 +87,10 @@ h2 {
 
 /* WORK style  */
 
+.work-background {
+    background-color: #fff;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
